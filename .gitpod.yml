@@ -1,0 +1,20 @@
+# Image to use for your workspace
+image: gitpod/workspace-full
+
+# Commands to run on workspace start
+tasks:
+  - init: echo "Initializing your development environment..."
+    command: echo "Environment ready!"
+
+# Ports to expose
+ports:
+  - port: 3000
+    onOpen: open-preview
+  - port: 8080
+    onOpen: ignore
+
+# VS Code extensions to install
+vscode:
+  extensions:
+    - esbenp.prettier-vscode
+    - dbaeumer.vscode-eslint
